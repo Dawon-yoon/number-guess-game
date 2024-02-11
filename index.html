@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="jp">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,12 +7,36 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Number Guess Game</h1>
-    <div id="result-area">The result is</div>
-    <form id="input-form">
-      <input required type="number" placeholder="Write your number here" />
-      <button id="play-button">Go!</button>
-    </form>
+    <main class="container">
+      <img src="iphone.avif" />
+      <div class="text-box">
+        <h1>Number Guess Game</h1>
+        <div class="game-box">
+          <img class="number-img" src="6205894.png" />
+          <div id="chance-area">Chance: 5</div>
+          <div id="result-area">The result is?</div>
+          <form id="input-form">
+            <input
+              required
+              type="number"
+              placeholder="Write your number here"
+            />
+            <button id="play-button" class="play-btn">Go!</button>
+          </form>
+          <div class="buttons-box">
+            <button id="reset-btn" class="reset-btn">Reset</button>
+            <button class="rule-button">
+              <i class="fa-regular fa-circle-question"></i>
+            </button>
+            <div class="hidden"></div>
+          </div>
+        </div>
+      </div>
+    </main>
     <script src="main.js"></script>
+    <script
+      src="https://kit.fontawesome.com/e106b2b7eb.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
